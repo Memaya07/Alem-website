@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alem</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="header-container">
+        <div class="header-content">
+          <div class="logo-container">
+            <div class="logo">
+              <img src="Assets/logo.png" alt="Logo" />
+            </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav desktop-nav">
+            <a href="#company-1" class="nav-link">Company 1</a>
+            <a href="#company-2" class="nav-link">Company 2</a>
+            <a href="#company-3" class="nav-link">Company 3</a>
+            <a href="#company-4" class="nav-link">Company 4</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle menu"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#company-1" class="mobile-nav-link">Company 1</a>
+        <a href="#company-2" class="mobile-nav-link">Company 2</a>
+        <a href="#company-3" class="mobile-nav-link">Company 3</a>
+        <a href="#company-4" class="mobile-nav-link">Company 4</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+        <img src="Assets/Hero.jpg" alt="" class="hero-bg-image" />
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">LOREM IPSUM DOLOR</h1>
+        <p class="hero-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
+          sapien et neque suscipit fermentum. Nulla facilisi. Integer ac lorem
+          at justo porta placerat.
+        </p>
+        <button class="btn btn-primary">Contact us</button>
+      </div>
+
+      <button class="scroll-indicator" onclick="scrollToContent()">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Feature Section 1 -->
+    <section class="feature-section dark" data-animate>
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-image left">
+            <div class="image-overlay"></div>
+            <img src="Assets/Image.jpg" alt="" />
+          </div>
+
+          <div class="feature-content left">
+            <h2 class="feature-title">Lorem ipsum dolor sit amet</h2>
+            <p class="feature-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              pulvinar, libero sit amet rhoncus volutpat, felis velit facilisis
+              lorem, sit amet tincidunt nulla felis at ante. Etiam consequat
+              pharetra lorem, vitae finibus lorem bibendum nec. Sed blandit
+              risus at diam volutpat, vitae aliquet odio euismod. Curabitur sit
+              amet massa ac tortor facilisis ornare.
+            </p>
+            <button class="btn btn-secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section 2 -->
+    <section class="feature-section light" data-animate>
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-image right">
+            <div class="image-overlay"></div>
+            <img src="Assets/Image.jpg" alt="" />
+          </div>
+
+          <div class="feature-content right">
+            <h2 class="feature-title">Lorem ipsum dolor sit amet</h2>
+            <p class="feature-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              pulvinar, libero sit amet rhoncus volutpat, felis velit facilisis
+              lorem, sit amet tincidunt nulla felis at ante. Etiam consequat
+              pharetra lorem, vitae finibus lorem bibendum nec. Sed blandit
+              risus at diam volutpat, vitae aliquet odio euismod. Curabitur sit
+              amet massa ac tortor facilisis ornare.
+            </p>
+            <button class="btn btn-secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section 3 -->
+    <section class="feature-section dark" data-animate>
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-image left">
+            <div class="image-overlay"></div>
+            <img src="Assets/Image.jpg" alt="" />
+          </div>
+
+          <div class="feature-content left">
+            <h2 class="feature-title">Lorem ipsum dolor sit amet</h2>
+            <p class="feature-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              pulvinar, libero sit amet rhoncus volutpat, felis velit facilisis
+              lorem, sit amet tincidunt nulla felis at ante. Etiam consequat
+              pharetra lorem, vitae finibus lorem bibendum nec. Sed blandit
+              risus at diam volutpat, vitae aliquet odio euismod. Curabitur sit
+              amet massa ac tortor facilisis ornare.
+            </p>
+            <button class="btn btn-secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section 4 -->
+    <section class="feature-section light" data-animate>
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-image right">
+            <div class="image-overlay"></div>
+            <img src="Assets/Image.jpg" alt="" />
+          </div>
+
+          <div class="feature-content right">
+            <h2 class="feature-title">Lorem ipsum dolor sit amet</h2>
+            <p class="feature-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              pulvinar, libero sit amet rhoncus volutpat, felis velit facilisis
+              lorem, sit amet tincidunt nulla felis at ante. Etiam consequat
+              pharetra lorem, vitae finibus lorem bibendum nec. Sed blandit
+              risus at diam volutpat, vitae aliquet odio euismod. Curabitur sit
+              amet massa ac tortor facilisis ornare.
+            </p>
+            <button class="btn btn-secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-animate>
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2 class="contact-title">CONTACT US</h2>
+          <p class="contact-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
+            sapien et neque.
+          </p>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@gmail.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write a message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">
+            <span>Send Message</span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <img src="Assets/logo.png" alt="Logo" />
+            </div>
+            <div class="footer-contact">
+              <p>Email: contact@example.com</p>
+              <p>Tel: +1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="footer-nav">
+            <h3 class="footer-nav-title">Navigation</h3>
+            <div class="footer-nav-grid">
+              <a href="#company-1">Company 1</a>
+              <a href="#company-2">Company 2</a>
+              <a href="#company-3">Company 3</a>
+              <a href="#company-4">Company 4</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>© 2025 alem.com - All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
